@@ -148,11 +148,10 @@ MongoClient.connect(config.db, function(err, db) {
     });
 
 
-    // Fix for A6-Sensitive Data Exposure
     // Use secure HTTPS protocol
-    https.createServer(httpsOptions, app).listen(config.port,  function() {
+    /*https.createServer(httpsOptions, app).listen(config.port,  function() {
         console.log("Express https server listening on port " + config.port);
     });
-    
+    /*
 
 });
